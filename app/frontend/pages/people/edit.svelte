@@ -3,8 +3,7 @@
   import Form from "./Form.svelte";
   import { router } from "@inertiajs/svelte";
 
-  export let person = {};
-  export let errors = {};
+  let { person = {}, errors = {} } = $props();
 
   const submit = () => {
     router.put(`/people/${person.id}`, { person });

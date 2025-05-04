@@ -3,7 +3,7 @@
   import { router } from "@inertiajs/svelte";
   import Layout from "../../components/Layout.svelte";
 
-  export let person = {};
+  let { person = $bindable({}) } = $props();
 
   const submit = () => {
     router.delete(`/people/${person.id}`);
@@ -21,7 +21,7 @@
   <div>
     <a href={`/people/${person.id}/edit`} use:inertia>Edit</a>
 
-    <button on:click={submit}>Delete</button>
+    <button onclick={submit}>Delete</button>
   </div>
 </Layout>
 

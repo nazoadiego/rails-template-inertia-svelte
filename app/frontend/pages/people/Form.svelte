@@ -1,17 +1,18 @@
 <script lang="ts">
+  import { preventDefault } from 'svelte/legacy';
+
   import { createEventDispatcher } from "svelte";
 
   const dispatch = createEventDispatcher();
 
-  export let person = {};
-  export let errors = {};
+  let { person = $bindable({}), errors = {} } = $props();
 
   const submit = () => {
     dispatch("submit", { person });
   };
 </script>
 
-<form on:submit|preventDefault={submit}>
+<form onsubmit={preventDefault(submit)}>
   <div>
     <label>First Name <input bind:value={person.first_name} /></label>
     {#if errors.first_name}<div>{errors.first_name}</div>{/if}

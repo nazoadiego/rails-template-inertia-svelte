@@ -1,8 +1,7 @@
 <script lang="ts">
   import { inertia } from "@inertiajs/svelte";
   import Layout from "../../components/Layout.svelte";
-  export let people = [];
-  export let user = {};
+  let { people = [], user = {} } = $props();
 </script>
 
 <Layout>
