@@ -7,10 +7,6 @@ export default defineConfig({
   plugins: [
     RubyPlugin(),
     svelte(),
+    FullReload(['app/frontend/**/*'], { delay: 100 })
   ],
-  server: {
-    watch: {
-      usePolling: true
-    }
-  }
 })
