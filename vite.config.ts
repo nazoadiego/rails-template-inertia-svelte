@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [
     RubyPlugin(),
     svelte(),
-    FullReload(['app/frontend/**/*'], { delay: 100 })
+    FullReload(['app/frontend/**/*', 'app/assets/stylesheets/**/*'], { delay: 100 })
   ],
 })

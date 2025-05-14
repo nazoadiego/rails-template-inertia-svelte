@@ -65,10 +65,21 @@ p, h1, h2, h3, h4, h5, h6 {
   ==========
 */
 
-body {
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: #1e88e5;
+    --primary-hover: #2196f3;
+    --primary-focus: rgba(30, 136, 229, 0.25);
+    --primary-inverse: #FFF;
+    --pico-background-color: red;
+  }
+}
+
+/* body {
   background-color: darkslategrey;
   color: whitesmoke;
-}
+} */
 
 a {
   color: inherit;
