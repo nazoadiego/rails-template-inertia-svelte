@@ -1,12 +1,13 @@
 <script lang="ts">
   import { inertia } from "@inertiajs/svelte";
   import Layout from "../../components/Layout.svelte";
-  let { people = [], user = {} } = $props();
+  let { people = [], current_user = {} } = $props();
 </script>
 
 <Layout>
-  <h1>People</h1>
+  <h1>Hi, {current_user.email}</h1>
 
+  <h3>These are some people</h3>
   <ul>
     {#each people as person}
       <li>

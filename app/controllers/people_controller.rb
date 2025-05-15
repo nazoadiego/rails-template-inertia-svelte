@@ -4,12 +4,10 @@ class PeopleController < ApplicationController
 
   def index
     @people = Person.all
-    @user = current_user
   end
 
   def show
     @person = Person.find(params[:id]) 
-    @user = current_user
   end
 
   def new

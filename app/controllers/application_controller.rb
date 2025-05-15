@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   use_inertia_instance_props
-  inertia_share user: -> { current_user }
+  inertia_share current_user: -> { current_user }
 
   before_action -> {
     InertiaRails.configure do |config|

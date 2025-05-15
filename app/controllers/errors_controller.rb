@@ -1,5 +1,5 @@
 class ErrorsController < ApplicationController
-  def forbidden 
+  def forbidden
     render inertia: 'errors/402'
   end
 
