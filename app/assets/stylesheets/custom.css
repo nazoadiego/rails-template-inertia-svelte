@@ -65,14 +65,34 @@ p, h1, h2, h3, h4, h5, h6 {
   ==========
 */
 
+/* Purple: `#655A85`, 
+Fuchsia: `#E14FA9`,
+ Green: `#B0ED8F */
+
+ /* New options */
+/* Purple: #5D4E99 (muted violet)
+Pink: #F088B0 (gentle, readable)
+Green: #88C999 (minty and modern) */
+
+/* Purple: #6A5CA4 (softer and cooler)
+Pink/Fuchsia: #D75CA2 (less neon, more elegant)
+Green: #A3DC8F (calmer, not a great contrast) */
+
 /* Automatically enabled if user has Dark mode enabled */
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --primary: #1e88e5;
-    --primary-hover: #2196f3;
-    --primary-focus: rgba(30, 136, 229, 0.25);
-    --primary-inverse: #FFF;
-    --pico-background-color: red;
+    --pico-primary: #5D4E99;
+    --pico-primary-background: #5D4E99;
+    --pico-secondary-background: #5D4E99;
+    --pico-color: #111111;
+    --pico-h1-color: #111111;
+    --pico-h2-color: #111111;
+    --pico-h3-color: #111111;
+    --pico-h4-color: #111111;
+    --pico-h5-color: #111111;
+    --pico-h6-color: #111111;
+    --pico-color: #111111;
+    --pico-background-color: #FFFFFF;
   }
 }
 
