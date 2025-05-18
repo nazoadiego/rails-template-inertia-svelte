@@ -79,27 +79,20 @@ Pink/Fuchsia: #D75CA2 (less neon, more elegant)
 Green: #A3DC8F (calmer, not a great contrast) */
 
 /* Automatically enabled if user has Dark mode enabled */
-@media only screen and (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --pico-primary: #5D4E99;
-    --pico-primary-background: #5D4E99;
-    --pico-secondary-background: #5D4E99;
-    --pico-color: #111111;
-    --pico-h1-color: #111111;
-    --pico-h2-color: #111111;
-    --pico-h3-color: #111111;
-    --pico-h4-color: #111111;
-    --pico-h5-color: #111111;
-    --pico-h6-color: #111111;
-    --pico-color: #111111;
-    --pico-background-color: #FFFFFF;
-  }
+ #root {
+  --pico-primary: #5D4E99;
+  --pico-primary-background: #5D4E99;
+  --pico-secondary-background: #5D4E99;
+  --pico-color: #111111;
+  --pico-h1-color: #111111;
+  --pico-h2-color: #111111;
+  --pico-h3-color: #111111;
+  --pico-h4-color: #111111;
+  --pico-h5-color: #111111;
+  --pico-h6-color: #111111;
+  --pico-color: #111111;
+  --pico-background-color: #FFFFFF;
 }
-
-/* body {
-  background-color: darkslategrey;
-  color: whitesmoke;
-} */
 
 a {
   color: inherit;

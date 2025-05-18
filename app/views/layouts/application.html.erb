@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="es-ES" id="root">
   <head>
     <title>Rails Inertia Svelte</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     >
-    <%= stylesheet_link_tag "application" %>
+    <%= stylesheet_link_tag "main" %>
     <%= vite_client_tag %>
     <%= vite_javascript_tag 'inertia' %>
     <%= inertia_ssr_head %>
