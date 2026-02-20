@@ -4,7 +4,7 @@
     "@vitejs/plugin-vue": "^5.2.3",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
-    "svelte": "^5.28.2",
+    "svelte": "^5.51.5",
     "vite": "^6.3.4",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-ruby": "^5.1.1"
