@@ -21,6 +21,6 @@ end
 
 gem 'faker', '~> 3.2'
 
-gem 'devise', '~> 4.9'
+gem 'devise', '~> 5.0'
 
 gem "hirb", "~> 0.7.3"
